@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import vuetify from '@/plugins/vuetify';
 import singleSpaVue from 'single-spa-vue';
 
 import App from './App.vue';
@@ -8,6 +9,7 @@ Vue.config.productionTip = false;
 const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
+    vuetify,
     render(h) {
       return h(App, {
         props: {
@@ -19,10 +21,10 @@ const vueLifecycles = singleSpaVue({
           mountParcel: this.mountParcel,
           singleSpa: this.singleSpa,
           */
-        },
+        }
       });
-    },
-  },
+    }
+  }
 });
 
 export const bootstrap = vueLifecycles.bootstrap;
