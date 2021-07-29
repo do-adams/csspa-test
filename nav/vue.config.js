@@ -25,7 +25,7 @@ module.exports = {
           ]
         }
       ]
-    }
-    externals: ['vue']
+    },
+    externals: ['vue', 'vuetify']
   }
 };
