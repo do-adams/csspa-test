@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import vuetify from '@/plugins/vuetify';
+import { registerVuetify } from '@rs/vuetify';
 import singleSpaVue from 'single-spa-vue';
 
 import App from './App.vue';
@@ -9,7 +9,7 @@ Vue.config.productionTip = false;
 const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
-    vuetify,
+    vuetify: registerVuetify(Vue),
     render(h) {
       return h(App, {
         props: {
