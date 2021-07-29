@@ -1,5 +1,5 @@
 module.exports = {
   configureWebpack: {
-    externals: ['vue']
+    externals: ['vue', '@rs/vuetify']
   }
 };
