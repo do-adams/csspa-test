@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Nav />
+    <v-app>
+      <Nav />
+    </v-app>
   </div>
 </template>
 

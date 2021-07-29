@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Footer />
+    <v-app>
+      <Footer />
+    </v-app>
   </div>
 </template>
 
